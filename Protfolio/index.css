@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  padding: 0px;
+  margin: 1px;
+  font-family: cursive;
+}
+
+nav {
+  background-color: black(21, 3, 37);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+}
+
+.right ul li {
+  list-style: none;
+  margin: 0px 23px;
+}
+
+.right ul {
+  display: flex;
+}
+
+.left {
+  font-size: 2rem;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+}
+.firtstsectionright {
+  margin: 50px -200px;
+}
+.firstsectionleft {
+  margin: 50px -200px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 40px 30px;
+}
+.button {
+  padding: 15px 0px;
+}
+.button .btn {
+  background-color: red;
+  color: white;
+  border: 0px;
+  padding: 2px 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: cursive;
+}
+.button .btn a {
+  text-decoration: none;
+  color: white;
+}
+.right ul li:hover {
+  font-size: 1.04rem;
+}
+
+.red {
+  color: red;
+}
+
+hr {
+  margin: 2rem;
+  border: 0px;
+  background-color: rgb(8, 8, 31);
+  height: 1.5px;
+}
+.education {
+  color: white;
+}
+.headingeducation {
+  margin: 0px 50px;
+  font-size: 1.5rem;
+  color: red;
+}
+footer {
+  background-color: rgb(26, 24, 24);
+  color: white;
+  text-align: center;
+  padding: 9px;
+}
