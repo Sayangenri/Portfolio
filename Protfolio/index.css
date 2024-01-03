@@ -28,7 +28,7 @@ nav {
 }
 
 .left {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .right ul li a {
@@ -51,6 +51,9 @@ nav {
 }
 .button {
   padding: 15px 0px;
+}
+.lieducation{
+  font-size: 1.2rem;
 }
 .button .btn {
   background-color: red;
@@ -92,4 +95,93 @@ footer {
   color: white;
   text-align: center;
   padding: 9px;
+}
+body {
+  background-color: black;
+  padding: 0px;
+  margin: 1px;
+  font-family: cursive;
+}
+.intro {
+  color: white;
+  padding: 5px 5px;
+  margin: 10px 8px;
+  font-size: 20px;
+}
+.heading {
+  color: red;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.red {
+  color: red;
+}
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.thankyou{
+font-size: 25px;
+text-align: center;
+}
+
+.projects {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.projects ul li {
+  list-style: none;
+  color: white;
+}
+
+.projects ul {
+  
+}
+
+.left {
+  font-size: 2.5rem;
+}
+
+.projects ul li a {
+  color: red;
+}
+@media only screen and (min-width: 600px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .right ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .right ul li {
+    margin: 0 15px;
+  }
+
+  .firstsection {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .firtstsectionright,
+  .firstsectionleft {
+    margin: 50px -200px;
+  }
+
+  .button {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
