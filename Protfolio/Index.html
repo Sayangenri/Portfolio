@@ -20,11 +20,16 @@
       <div class="right">
         <ul>
           <li><a href="#"><span class="red">Home</li></a>
-          <li><a href="#about" target="_blank">About</span></li></a>
-          <li><a href="#projects" target="_blank"><span class="red">Projects</span></li></a>
+          <li><a href="#about">About</span></li></a>
+          <li><a href="#projects"><span class="red">Projects</span></li></a>
           <li><a href="https://www.linkedin.com/in/sayangenri/" target="_blank">Contact</a></li>
       </div>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
   <main>
@@ -155,7 +160,7 @@
     </ul>
   </div>
     </section>
-    <span class="red">Thankyou !!"</span>
+   <!--<span class="red">Thankyou !!"</span>--> 
     <footer>
       Copyright &#169 sayanfolio.com | All right reserved<br>
       Mail id = "sayangenri1@gmail.com"
@@ -169,6 +174,25 @@
       strings: ['Video Editing', 'Development', 'Content Creation.'],
       typeSpeed: 100,
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    var hamburger = document.querySelector('.hamburger');
+    var navList = document.querySelector('.right ul');
+
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('open');
+      navList.classList.toggle('show');
+    });
+
+    // Add this part to close the menu when a navigation item is clicked
+    var navItems = document.querySelectorAll('.right ul li a');
+    navItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        hamburger.classList.remove('open');
+        navList.classList.remove('show');
+      });
+    });
+  });
+
   </script>
 </body>
 
